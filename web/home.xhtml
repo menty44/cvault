@@ -9,16 +9,14 @@
     <h:body>
         Hello from Facelets am admin <p:outputLabel action="#{login.username}  ">#{login.username}  </p:outputLabel>
         
-        <p:tooltip />
-         
-<h:form>
-    <p:messages id="messages" showDetail="true" autoUpdate="true" closable="true" />
- 
-    <p:commandButton value="Info" actionListener="#{messagesView.info}" />
-    <p:commandButton value="Warn" actionListener="#{messagesView.warn}" />
-    <p:commandButton value="Error" actionListener="#{messagesView.error}" />
-    <p:commandButton value="Fatal" actionListener="#{messagesView.fatal}" />
-</h:form>
+        <p:stack icon="/SVG/wand.svg" expanded="true">
+            <p:menuitem value="Users" icon="/SVG/book.svg" url="/faces/users.xhtml"/>
+            <p:menuitem value="Music" icon="/SVG/music.svg" url="#"/>
+            <p:menuitem value="Video" icon="/SVG/video-camera.svg" url="#"/>
+            <p:menuitem value="Email" icon="/SVG/email.svg" url="#"/>
+            <p:menuitem value="Portfolio" icon="/SVG/folder.svg" url="#"/>
+        </p:stack>
+
     </h:body>
 </html>
 

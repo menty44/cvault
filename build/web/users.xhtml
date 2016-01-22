@@ -1,0 +1,27 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://java.sun.com/jsf/html"
+      xmlns:p="http://primefaces.org/ui">
+    <h:head>
+        <title>Facelet Title</title>
+    </h:head>
+    <h:body>
+        Hello <p:outputLabel action="#{login.username}" style="color: #ff0000">#{login.username}  </p:outputLabel>, here are your registered users.
+        
+        <p:stack icon="/SVG/wand.svg" expanded="true">
+            <p:menuitem value="Users" icon="/SVG/book.svg" url="#"/>
+            <p:menuitem value="Music" icon="/SVG/music.svg" url="#"/>
+            <p:menuitem value="Video" icon="/SVG/video-camera.svg" url="#"/>
+            <p:menuitem value="Email" icon="/SVG/email.svg" url="#"/>
+            <p:menuitem value="Portfolio" icon="/SVG/folder.svg" url="#"/>
+        </p:stack>
+        
+        <p></p>
+        <br></br>
+        
+        
+
+    </h:body>
+</html>
+
